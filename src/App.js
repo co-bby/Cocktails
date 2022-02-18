@@ -11,20 +11,20 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <switch>
+      <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/about">
+        <Route path="/about">
           <About />
         </Route>
-        <Route exact path="/cocktail/:id">
+        <Route path="/cocktail/:id">
           <SingleCocktail />
         </Route>
-        <Route exact path="*">
+        <Route path="*">
           <Error />
         </Route>
-      </switch>
+      </Switch>
     </Router>
   )
 }
